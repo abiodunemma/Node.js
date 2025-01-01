@@ -1,11 +1,24 @@
 {
-  "name": "apps.node-js",
+  "name": "node.js",
   "version": "1.0.0",
   "description": "Node.js at large",
+  "homepage": "https://github.com/abiodunemma/Node.js#readme",
+  "bugs": {
+    "url": "https://github.com/abiodunemma/Node.js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abiodunemma/Node.js.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {}
 }
