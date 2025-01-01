@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{background: skyblue; font-family: verdana; color: #fff; padding: 30px;}
+            h1{font-size: 48px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
+            p{font-size: 16px; text-align: center;}
+        </style>
+    </head>
+    <body>
+
+        <%- include('partials/nav') %>
+        <h1>Contact Us</h1>
+        <p>Contact the collest cats on the web right here...</p>
+       <p><%= qs.dept  %></p>
+        <form  id="contact-form"  method="POST" action="/contact">
+            <label for="who">Who do you want to contact?</label>
+            <input type="text" name="name" value="<%= qs.person %>">
+
+            <label for="email">Your Email</label>
+            <input type="email" name="email" value="<%= qs.email %>">  <!-- Added the missing quote -->
+
+            <label for="department">Department</label>
+            <input type="text" name="department" value="<%= qs.dept %>">  <!-- Fixed input type from 'depertment' to 'text' -->
+
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
